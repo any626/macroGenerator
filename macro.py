@@ -53,6 +53,14 @@ class Macro:
             #convert characters into hash
             macro = macro + characters[x]
             
+    def delayEvent(ms):
+        return "<DelayEvent>" + str(ms) + "</DelayEvent>"
+    
+    def pressKey(key, hold):
+        if (hold):
+            return keu + str(key) + keclose
+        return ked + str(key) + keclose
+            
                    
         
         
